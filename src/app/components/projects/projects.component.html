@@ -1,0 +1,29 @@
+<app-hero></app-hero>
+
+  <div style="margin-top: 4rem;" class="container">
+    <hr class="new4">
+
+    <h2>Projects</h2>
+
+    <div *ngFor="let item of myProjects" class="card mb-3">
+            <div class="row ">
+          <div class="col-md-4">
+            <img src="{{item.imageUrl}}" style="width: 26rem;
+            height: 16rem;" class="img-fluid" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">{{item.name}}</h5>
+              <p class="card-text">{{item.description}}</p>
+
+                <span *ngFor="let tools of item.tools" style="margin: 0 5px 0 0" class="badge text-bg-primary">{{tools}}</span>
+
+              <p class="card-text"><small class="text-muted">{{item.date}}</small></p>
+
+              <a  routerLink="projectDetail/{{item.key}}" >Ver más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</div>

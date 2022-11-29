@@ -1,0 +1,48 @@
+@import '../../../variables-colors.scss';
+
+.avatar {    
+    width: 150px;
+    height: 150px;
+
+    background-size: cover;
+
+    background-position: top center;
+    border-radius: 50%;
+}
+
+.container-position{
+    margin-top: 8rem;
+}
+
+.profile-information{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+.title{
+    color: $color-ligth-grey;
+}
+
+.subtitle{
+    color: $color-ligth-grey;
+}
+
+.skills-items{
+    color: $color-ligth-grey;
+}
+
+
+.about-me{
+    color: $color-ligth-grey;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+hr.new4 {
+    border: 1px solid #b7b7b7;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }

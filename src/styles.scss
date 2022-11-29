@@ -1,0 +1,35 @@
+@import './variables-colors.scss';
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: $color-body;    
+    color: $color-ligth-grey;
+}
+
+
+
+body.dark-theme {
+    color: $color-ligth-grey-dark;
+    background-color: $color-body-dark;
+}
+
+
+body.dark-theme .title {
+    color: $color-ligth-grey-dark;
+}
+
+body.dark-theme .subtitle {
+    color: $color-ligth-grey-dark;
+}
+
+body.dark-theme .about-me {
+    color: $color-ligth-grey-dark;
+}
+
+body.dark-theme .card-text {
+    color: black
+}
+
+body.dark-theme .card-title {
+    color: black
+}

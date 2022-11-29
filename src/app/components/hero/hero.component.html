@@ -1,0 +1,43 @@
+<div class="container container-position">
+
+    <div class="profile-information">
+        <img class="avatar" alt="profile image"
+            src="https://static.vecteezy.com/system/resources/previews/004/819/327/original/male-avatar-profile-icon-of-smiling-caucasian-man-vector.jpg" />
+
+        <div class="information">
+            <h2 class="title">Andrés Barrantes Chaves</h2>
+            <h4 class="subtitle">FullStack developer</h4>
+            <h6 class="subtitle">andres24968@gmail.com</h6>
+        </div>
+    </div>
+
+    <section style="margin-top: 2rem;">
+        <p class="about-me">
+            I have been a systems engineer for 4 years. Currently I work as a freelance developing for .net core and
+            .ASP Net Mvc
+        </p>
+    </section>
+
+
+    <hr class="new4">
+
+
+
+    <section>
+        
+
+        <h3 class="title">Skills</h3>
+
+
+    <ul  class="list-group">
+        <li *ngFor="let item of mySkills" class="list-group-item d-flex justify-content-between align-items-center skills-items">
+            {{item.name}}
+          <span [ngClass]="{'bg-warning':(item.level ==='Jr'), 'bg-success':( (item.level==='Mid'))}" class="badge bg-primary rounded-pill">{{item.level}}</span>
+        </li>
+      </ul> 
+    </section>
+
+
+
+
+</div>
